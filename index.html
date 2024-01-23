@@ -73,16 +73,9 @@
               <a href="">MCISLab, Beijing Institute of Technology</a><sup></sup></span>                                                                                 
           </div>
 
-          <!-- <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Peking University</span>
-            <span class="author-block"><sup>2</sup>Beijing Institute for General Artificial Intelligence (BIGAI)</span>
-            <span class="author-block"><sup>3</sup>Beijing Jiaotong University</span>
-            <span class="author-block"><sup>4</sup>Tsinghua University</span>
-          </div> -->
 
-
-          <div class="column has-text-centered">
-            <div class="publication-links">
+          <!-- <div class="column has-text-centered">
+            <div class="publication-links"> -->
               <!-- PDF Link. -->
               <!-- <span class="link-block">
                 <a href=""
@@ -109,7 +102,7 @@
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
                   </span>
-                  <span>Video</span>
+                  <span>Video</spa>
                 </a>
               </span> -->
               <!-- Code Link. -->
@@ -148,16 +141,24 @@
             Empowering visual algorithms/models quickly adapt to new environments/tasks is a key research direction in computer vision and machine learning. In the adaptation process, the matching degree between the geometry
             of space and the geometric structure of data plays an important role. Real-world data exhibits various froms of non-Euclidean geometric structures, such as hierarchical structures in natural language and cyclical structures in facial images. Previous research has shown
             that the non-Euclidean structure of real-world data are consistent with Riemannian manifold structures, providing theoretical feasibility for modeling data using Riemannian manifolds.
-            Here, we study to create suitable Riemannian geometry of the underlying data space to match the given data from the data-level, model-level, loss-level, and optimizer-level perspectives.          </p>
+            Here, we study to create suitable Riemannian geometry of the underlying data space to match the given data from the data-level, model-level, and optimizer-level perspectives, as shown in Figure 1. We further provide an illustration of geometry adaptation in Figure.2          </p>
     </div>
 
     <h2 class="subtitle has-text-justified">
       <b>Key words:</b> 
       Riemannian Manifolds, Geometry Adaptation, Riemannian Optimization, Riemannian Neural Networks 
     </h2>
-    <!-- <img width="95%" src="file/illustration_examples_framework.png"> -->
     <br>
-    <!-- <figcaption style="font-size: 18px;font-family: 'Times New Roman', Times, serif;" align="left">Figure 2. Framework of CLOVA. CLOVA is a general visual assistant that updates both LLMs and visual models via inference, reflection, and learning in a closed-loop framework. During inference, CLOVA uses LLMs to integrate visual tools to accomplish given tasks. In reflection, CLOVA identifies models that require updating based on environmental feedback. Finally, in learning, CLOVA collects data and updates models accordingly. </figcaption> -->
+    <br>
+    <img width="95%" src="file/structure_nochapternumber.png">
+    <br>
+    <figcaption style="font-size: 18px;font-family: 'Times New Roman', Times, serif;" align="center">Figure 1. Framework of geometry adaptation for computer vision. </figcaption>
+    
+    <br>
+    <br>
+    <img width="65%" src="file/comparison_together_9.png">
+    <br>
+    <figcaption style="font-size: 18px;font-family: 'Times New Roman', Times, serif;" align="center">Figure 2. One illustration of geometry adaptation. </figcaption>
 </section>
 
 
@@ -212,7 +213,7 @@
         <!-- Loss. -->
         <div class="columns is-centered has-text-centered">
           <div class="column">
-            <h2 class="title is-3">Loss-Level Geometry Adaptation</h2>
+            <h2 class="title is-3">CLassifier-Level Geometry Adaptation</h2>
             <div class="content has-text-justified">
               <p>
                 <!-- CLOVA has three phases: inference, reflection, and learning, as shown Figure 2. In the inference phase, CLOVA uses LLMs to generate programs and executes corresponding tools to solve the task. The reflection phase introduces a multimodal global-local reflection scheme that uses LLMs to generate critiques, identifying which tool needs to be updated. During learning, we employ three manners to collect training data and use a training-validation prompt tuning scheme to update the tools.  -->
@@ -235,6 +236,21 @@
       
           </div>
         </section>
+
+
+        <section class="section" >
+          <div class="container is-max-desktop">
+            <!-- Resource. -->
+            <div class="columns is-centered has-text-centered">
+              <div class="column">
+                <h2 class="title is-3">Resource</h2>
+                <div class="content has-text-justified">
+                  <p>
+                    <b>[THESIS 2023]</b> Geometry-Adaptive Meta-Learning in Riemannian Manifolds. Zhi Gao. (in Chinese) <a href="https://drive.google.com/file/d/1SDqUKJvdMoeUI0EDsTSWik7hzVxFrdZG/view?usp=sharing" > [pdf] </a>
+                  </p>
+        
+            </div>
+          </section>
 
 
 </body>
