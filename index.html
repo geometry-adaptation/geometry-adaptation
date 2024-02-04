@@ -25,7 +25,36 @@
         max-width: 90%; /* 调整iframe的宽度，以适应屏幕 */
         box-sizing: border-box;
     }
+    
+
+
 </style>
+
+<style>
+.container {
+  display: flex;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  /* height: 800px; */
+  /* margin-left: auto;
+  margin-right: auto; */
+  }
+  .photo {
+  width: 30%;
+  margin-right: 20px;
+  }
+ 
+</style>
+
+
+
+<style>
+  .link-container {
+      white-space: nowrap; /* 不换行 */
+  }
+</style>
+
   <title>Geometry</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -60,17 +89,16 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
 </head>
-<body>
 
 <section class="hero">
   <div class="hero-body">
-    <div class="container is-max-desktop">
+    <!-- <div class="container is-max-desktop"> -->
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-2 publication-title">Geometry Adaptation for Computer Vision</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="">MCISLab, Beijing Institute of Technology</a><sup></sup></span>                                                                                 
+              <a href="" >MCISLab, Beijing Institute of Technology</a><sup></sup></span>                                                                                 
           </div>
 
 
@@ -125,9 +153,11 @@
           <figcaption style="font-size: 18px;font-family: 'Times New Roman', Times, serif;">Figure 1. Several examples of CLOVA</figcaption> -->
         </div>
       </div>
-    </div>
+    <!-- </div> -->
   </div>
 </section>
+
+
 
 
 <section class="section" >
@@ -163,19 +193,6 @@
 
 
 
-<section class="section" >
-  <div class="container is-max-desktop">
-    <!-- Team Group. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column">
-        <h2 class="title is-3">Team Group</h2>
-        <div class="content has-text-justified">
-          <p>
-            <!-- CLOVA has three phases: inference, reflection, and learning, as shown Figure 2. In the inference phase, CLOVA uses LLMs to generate programs and executes corresponding tools to solve the task. The reflection phase introduces a multimodal global-local reflection scheme that uses LLMs to generate critiques, identifying which tool needs to be updated. During learning, we employ three manners to collect training data and use a training-validation prompt tuning scheme to update the tools.  -->
-          </p>
-
-    </div>
-  </section>
 
 
 
@@ -186,10 +203,18 @@
       <div class="column">
         <h2 class="title is-3">Data-Level Geometry Adaptation</h2>
         <div class="content has-text-justified">
-          <p>
-            <!-- CLOVA has three phases: inference, reflection, and learning, as shown Figure 2. In the inference phase, CLOVA uses LLMs to generate programs and executes corresponding tools to solve the task. The reflection phase introduces a multimodal global-local reflection scheme that uses LLMs to generate critiques, identifying which tool needs to be updated. During learning, we employ three manners to collect training data and use a training-validation prompt tuning scheme to update the tools.  -->
-          </p>
 
+          <div class="container">
+            <img src="./file/IFG.jpg" alt="photo" class="photo">
+            <p>
+              <b>Hyperbolic Feature Augmentation via Distribution Estimation and </b><br>
+              <b> Infinite Sampling on Manifolds</b><br>
+              Zhi Gao, Yuwei Wu, Yunde Jia, Mehrtash Harandi <br>
+              NeurIPS, 2022. <br>
+              <a href="https://drive.google.com/file/d/1ksu0wB4ITzucSXjZkcACTFbcbfX9LY5z/view"> [PDF] </a> <a href=""> [Project] </a> <a href=""> [Code] </a> <br>
+              Infinite feature augmentation on hyperbolic spaces.
+            </p>
+          </div>
     </div>
   </section>
 
@@ -201,26 +226,48 @@
         <div class="column">
           <h2 class="title is-3">Model-Level Geometry Adaptation</h2>
           <div class="content has-text-justified">
-            <p>
-              <!-- CLOVA has three phases: inference, reflection, and learning, as shown Figure 2. In the inference phase, CLOVA uses LLMs to generate programs and executes corresponding tools to solve the task. The reflection phase introduces a multimodal global-local reflection scheme that uses LLMs to generate critiques, identifying which tool needs to be updated. During learning, we employ three manners to collect training data and use a training-validation prompt tuning scheme to update the tools.  -->
-            </p>
+
+            <div class="container">
+              <img src="./file/GECL.jpg" alt="photo" class="photo">
+              <p>
+                <b>Exploring Data Geometry for Continual Learning</b><br>
+                Zhi Gao, Chen Xu, Feng Li, Yunde Jia, Mehrtash Harandi, Yuwei Wu<br>
+                CVPR, 2023. <br>
+                <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Gao_Exploring_Data_Geometry_for_Continual_Learning_CVPR_2023_paper.pdf"> [PDF] </a> <a href=""> [Project] </a> <a href=""> [Code] </a> <br>
+                A exapndable geometry of mixed-curvature space for dynamic data stream.
+              </p>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="container">
+              <img src="./file/CurAML.jpg" alt="photo" class="photo">
+              <p>
+                <b>Curvature-Adaptive Meta-Learning for Fast Adaptation to Manifold Data</b><br>
+                Zhi Gao, Yuwei Wu, Mehrtash Harandi, Yunde Jia <br>
+                T-PAMI, 2022. <br>
+                <a href="https://drive.google.com/file/d/1h9sGfF_azEkRPJvYNwinGTmE8nNCEDcZ/view"> [PDF] </a> <a href=""> [Project] </a> <a href=""> [Code] </a> <br>
+                Curvature adaptation for backbone in mixed-curvature space.
+              </p>
+            </div>
+          
+            <br>
+            <br>
+          
+            <div class="container">
+              <img src="./file/CGFSL.jpg" alt="photo" class="photo">
+              <p>
+                <b>Curvature Generation in Curved Spaces for Few-Shot Learning</b><br>
+                Zhi Gao, Yuwei Wu, Yunde Jia, Mehrtash Harandi <br>
+                ICCV, 2021. <br>
+                <a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Gao_Curvature_Generation_in_Curved_Spaces_for_Few-Shot_Learning_ICCV_2021_paper.pdf"> [PDF] </a> <a href=""> [Project] </a> <a href=""> [Code] </a> <br>
+                Generate suitable curvature for hyperbolic classifier.
+              </p>
+            </div>
   
       </div>
     </section>
-
-    <section class="section" >
-      <div class="container is-max-desktop">
-        <!-- Loss. -->
-        <div class="columns is-centered has-text-centered">
-          <div class="column">
-            <h2 class="title is-3">CLassifier-Level Geometry Adaptation</h2>
-            <div class="content has-text-justified">
-              <p>
-                <!-- CLOVA has three phases: inference, reflection, and learning, as shown Figure 2. In the inference phase, CLOVA uses LLMs to generate programs and executes corresponding tools to solve the task. The reflection phase introduces a multimodal global-local reflection scheme that uses LLMs to generate critiques, identifying which tool needs to be updated. During learning, we employ three manners to collect training data and use a training-validation prompt tuning scheme to update the tools.  -->
-              </p>
-    
-        </div>
-      </section>
 
 
       <section class="section" >
@@ -230,10 +277,58 @@
             <div class="column">
               <h2 class="title is-3">Optimizer-Level Geometry Adaptation</h2>
               <div class="content has-text-justified">
-                <p>
-                  <!-- CLOVA has three phases: inference, reflection, and learning, as shown Figure 2. In the inference phase, CLOVA uses LLMs to generate programs and executes corresponding tools to solve the task. The reflection phase introduces a multimodal global-local reflection scheme that uses LLMs to generate critiques, identifying which tool needs to be updated. During learning, we employ three manners to collect training data and use a training-validation prompt tuning scheme to update the tools.  -->
-                </p>
-      
+
+                <div class="container">
+                  <img src="./file/gmlstm.jpg" alt="photo" class="photo">
+                  <p>
+                    <b>Learning to Optimize on Riemannian Manifolds</b><br>
+                    Zhi Gao, Yuwei Wu, Xiaomeng Fan, Mehrtash Harandi, Yunde Jia <br>
+                    T-PAMI, 2023. <br>
+                    <a href="https://drive.google.com/file/d/1OCfsMvEFgzjam8SRyI8SanckLIiSJWvN/view"> [PDF] </a> <a href=""> [Project] </a> <a href=""> [Code] </a> <br>
+                    Learning Riemannian optimizers for vairous manifolds.
+                  </p>
+                </div>
+                <br>
+                <br>
+
+                <div class="container">
+                  <img src="./file/implicit.jpg" alt="photo" class="photo">
+                  <p>
+                    <b>Efficient Riemannian Meta-Optimization by Implicit Differentiation</b><br>
+                    Xiaomeng Fan, Yuwei Wu, Zhi Gao, Yunde Jia, Mehrtash Harandi <br>
+                    AAAI, 2022. <br>
+                    <a href="https://drive.google.com/file/d/1Pxe9Ijab69IX5UORCSSZ0VLGP3JGPXuM/view"> [PDF] </a> <a href=""> [Project] </a> <a href=""> [Code] </a> <br>
+                    Efficiently learning Riemannian optimizers via implicit differentiation.
+                  </p>
+                </div>
+                <br>
+                <br>
+
+                <div class="container">
+                  <img src="./file/Gradient-free.jpg" alt="photo" class="photo">
+                  <p>
+                    <b>Learning a Gradient-free Riemannian Optimizer on Tangent Spaces</b><br>
+                    Xiaomeng Fan, Zhi Gao, Yuwei Wu, Yunde Jia, Mehrtash Harandi <br>
+                    AAAI, 2021. <br>
+                    <a href="https://drive.google.com/file/d/1kPbOPnO1Ciur-9t_ABWOnOFkE6v_pM1L/view"> [PDF] </a> <a href=""> [Project] </a> <a href=""> [Code] </a> <br>
+                    Learning gredient-free Riemannian optimizers.
+                  </p>
+                </div>
+                <br>
+                <br>
+
+                <div class="container">
+                  <img src="./file/mllstm.jpg" alt="photo" class="photo">
+                  <p>
+                    <b>Learning to Optimize on SPD Manifolds</b><br>
+                    Zhi Gao, Yuwei Wu, Yunde Jia, Mehrtash Harandi <br>
+                    CVPR, 2020. <br>
+                    <a href="https://drive.google.com/file/d/1mPAcckPItzFU-BNSn10glnDaUOe7aiY0/view"> [PDF] </a> <a href=""> [Project] </a> <a href=""> [Code] </a> <br>
+                    Learning a optimizers on SPD manifold.
+                  </p>
+                </div>
+
+
           </div>
         </section>
 
@@ -252,6 +347,4 @@
             </div>
           </section>
 
-
-</body>
 </html>
